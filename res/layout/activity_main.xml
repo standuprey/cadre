@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/full_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/background"
+	android:screenOrientation="landscape" >
+
+	<WebView xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/full_web_view"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:scrollbars="none"
+		android:background="@color/background">
+	</WebView>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:id="@+id/loader"
+		android:layout_height="fill_parent" android:background="@color/background">
+		<ProgressBar android:layout_height="wrap_content"
+			android:id="@+id/progress" android:layout_centerInParent="true"
+			android:layout_width="wrap_content"></ProgressBar>
+		<ImageView android:src="@drawable/ic_launcher"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_above="@id/progress" android:paddingBottom="20dip"
+			android:layout_centerHorizontal="true"></ImageView>
+	</RelativeLayout>
+	
+</RelativeLayout>
